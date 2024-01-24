@@ -6,7 +6,7 @@ const app = express()
 app.get('/',(req,res) => {
 console.log('Peticion recibida')
 
-res.send('<h1>Hola mundo!!! </h1>')
+res.status(200).send('<h1>Hola mundo!!! </h1>')
 })
 
 const puerto = process.env.puerto || 4000
