@@ -6,7 +6,7 @@ const app = express()
 app.get('/',(req,res) => {
 console.log('Peticion recibida')
 
-res.status(200).sendFile('index.html')
+res.status(200).sendFile('index.html',{root: __dirname})
 })
 
 const puerto = process.env.puerto || 4000
